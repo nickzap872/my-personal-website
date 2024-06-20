@@ -1,3 +1,10 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
-document.querySelector("body").appendChild(h2);
+document.addEventListener("DOMContentLoaded", () => {
+    const bio = document.getElementById("bio");
+    bio.addEventListener("mouseover", () => {
+      bio.style.backgroundColor = "#e0f7fa";
+    });
+    bio.addEventListener("mouseout", () => {
+      bio.style.backgroundColor = "#fff";
+    });
+  });
+  
